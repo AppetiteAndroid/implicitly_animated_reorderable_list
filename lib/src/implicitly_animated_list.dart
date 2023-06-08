@@ -241,8 +241,6 @@ class _SliverImplicitlyAnimatedListState<E extends Object> extends ImplicitlyAni
 
         if (item == null) {
           return Container();
-        } else if (updateItemBuilder != null && didChange) {
-          return buildUpdatedItemWidget(item);
         } else {
           return itemBuilder(context, animation, item, index);
         }
